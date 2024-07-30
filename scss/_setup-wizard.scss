@@ -181,8 +181,43 @@
 
     }
 
+    .setup-wizard__feature-lists{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 138px;
+      grid-row-gap: 20px;
+      .setup-wizard__single-feature{
+        display: flex;
+        align-items: start;
+        gap: 27px;
+        .setup-wizard__feature-image{}
+        .setup-wizard__feature-text-content{
+          .setup-wizard__feature-heading{
+            color: #0E003C;
+            font-family: Urbanist;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 27px; 
+          }
+          .setup-wizard__feature-description{
+            color: #73707D;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+
+
+
     .setup-wizard__main-buttons{
       @extend %button-container;
+      margin-top: 20px;
+
 
     .setup-wizard__button-left{
       @extend %common-button;

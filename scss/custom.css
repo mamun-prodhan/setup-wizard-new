@@ -205,6 +205,36 @@
 .setup-wizard__features-section-container .setup-wizard__features-text-content {
   margin-bottom: 20px;
 }
+.setup-wizard__features-section-container .setup-wizard__feature-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 138px;
+  grid-row-gap: 20px;
+}
+.setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature {
+  display: flex;
+  align-items: start;
+  gap: 27px;
+}
+.setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-text-content .setup-wizard__feature-heading {
+  color: #0E003C;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+}
+.setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-text-content .setup-wizard__feature-description {
+  color: #73707D;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.setup-wizard__features-section-container .setup-wizard__main-buttons {
+  margin-top: 20px;
+}
 .setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
   color: #FFFFFF;
   background-color: #3f04fe;
