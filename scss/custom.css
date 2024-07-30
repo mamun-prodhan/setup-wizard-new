@@ -1,0 +1,120 @@
+.setup-wizard {
+  background-color: #E4E0F1;
+}
+.setup-wizard__container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 930px;
+}
+.setup-wizard__logo-container {
+  text-align: center;
+  padding: 28px 0;
+}
+.setup-wizard__logo-container figure {
+  margin: 0;
+}
+.setup-wizard__logo-container figure .setup-wizard__wizard-logo {
+  max-width: 100%;
+  height: auto;
+}
+.setup-wizard__progress-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  border: 1px solid #EBEFF5;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  margin: 0rem 0.3rem 0rem 0.2rem;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step {
+  flex-grow: 1;
+  position: relative;
+  padding: 15px 16px 15px 50px;
+  background-color: transparent;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step:first-child {
+  padding: 15px 16px;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  bottom: 0;
+  right: -18px;
+  margin: auto 0;
+  width: 40px;
+  height: 43px;
+  background: rgb(255, 255, 255);
+  transform: rotate(-43deg);
+  -webkit-clip-path: polygon(100% 2%, 2% 100%, 100% 100%);
+          clip-path: polygon(100% 2%, 2% 100%, 100% 100%);
+  border-radius: 0 0 10px 0;
+  border-right: 2px solid #EBEFF5;
+  border-bottom: 2px solid #EBEFF5;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 9px;
+  margin: 0;
+  font-family: "-apple-system", sans-serif;
+  color: #6E786E;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step p span {
+  border: 1px solid #6c798f;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--not-visited p {
+  color: #73707d;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--not-visited p span {
+  border: 1px solid rgb(229, 232, 243);
+  color: rgba(36, 34, 60, 0.2);
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--active {
+  background: #00B4FF;
+  color: #ffffff;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--active:before {
+  background: #00B4FF;
+  border-right: none;
+  border-bottom: none;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--active p {
+  font-weight: 500;
+  color: #fff;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--active p span {
+  border: 1px solid #ffffff;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--visited {
+  background: #ffffff;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--visited p {
+  font-weight: 600;
+  color: #081e43;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--visited p span {
+  background: #00B4FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--visited p span svg {
+  width: 9px;
+  height: 9px;
+}/*# sourceMappingURL=custom.css.map */
