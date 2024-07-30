@@ -39,6 +39,32 @@
   }
 }
 
+.setup-wizard__features-section-container, .setup-wizard__welcome-section-container {
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 40px 30px;
+  box-shadow: 0px 1px 1px 0px rgba(184, 177, 206, 0.7);
+}
+
+.setup-wizard__features-section-container .setup-wizard__main-buttons, .setup-wizard__welcome-section-container .setup-wizard__main-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-right, .setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-left, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-right, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 17px 22px;
+}
+
 .setup-wizard {
   background-color: #E4E0F1;
 }
@@ -158,13 +184,6 @@
   width: 9px;
   height: 9px;
 }
-.setup-wizard__welcome-section-container {
-  margin-top: 20px;
-  border-radius: 10px;
-  background: #FFF;
-  padding: 40px 30px;
-  box-shadow: 0px 1px 1px 0px rgba(184, 177, 206, 0.7);
-}
 .setup-wizard__welcome-section-container .setup-wizard__welcome-text-content {
   margin-bottom: 20px;
 }
@@ -174,28 +193,23 @@
   margin: 0 auto;
   border-radius: 10px;
 }
-.setup-wizard__welcome-section-container .setup-wizard__main-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-left,
-.setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-right {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-family: Urbanist;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  padding: 17px 22px;
-}
 .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
   color: #FFFFFF;
   background-color: #3f04fe;
 }
 .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-right {
+  color: #3f04fe;
+  border: 1px solid #EBE4FF;
+  background: #F7F4FF;
+}
+.setup-wizard__features-section-container .setup-wizard__features-text-content {
+  margin-bottom: 20px;
+}
+.setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
+  color: #FFFFFF;
+  background-color: #3f04fe;
+}
+.setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-right {
   color: #3f04fe;
   border: 1px solid #EBE4FF;
   background: #F7F4FF;
