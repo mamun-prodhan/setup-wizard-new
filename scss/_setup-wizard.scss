@@ -31,7 +31,7 @@
       width: 100%;
       text-align: center;
       display: flex;
-      border: 1px solid #EBEFF5;
+      border: 1px solid #ebeff5;
       border-radius: 10px;
       background: #fff;
       overflow: hidden;
@@ -44,7 +44,7 @@
 
         &:first-child {
           padding: 15px 16px;
-        }    
+        }
 
         &:before {
           content: "";
@@ -60,8 +60,8 @@
           transform: rotate(-43deg);
           clip-path: polygon(100% 2%, 2% 100%, 100% 100%);
           border-radius: 0 0 10px 0;
-          border-right: 2px solid #EBEFF5;
-          border-bottom: 2px solid #EBEFF5;
+          border-right: 2px solid #ebeff5;
+          border-bottom: 2px solid #ebeff5;
         }
 
         p {
@@ -71,9 +71,9 @@
           font-weight: 400;
           gap: 9px;
           margin: 0;
-          font-family: '-apple-system', sans-serif;
-          color: #6E786E;
-    
+          font-family: "-apple-system", sans-serif;
+          color: #6e786e;
+
           span {
             border: 1px solid $step_color_primary;
             border-radius: 50%;
@@ -97,11 +97,11 @@
         }
 
         &--active {
-          background: $secondary-color; 
+          background: $secondary-color;
           color: #ffffff;
 
           &:before {
-            background: $secondary-color; 
+            background: $secondary-color;
             border-right: none;
             border-bottom: none;
           }
@@ -124,7 +124,7 @@
             color: #081e43;
 
             span {
-              background: $secondary-color; 
+              background: $secondary-color;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -140,68 +140,100 @@
     }
   }
 
-  &__welcome-section-container{
+  &__welcome-section-container {
     @extend %section-container;
 
-    .setup-wizard__welcome-text-content{
+    .setup-wizard__welcome-text-content {
       margin-bottom: 20px;
     }
 
-    .setup-wizard__welcome-video-container{
-      iframe,img{
+    .setup-wizard__welcome-video-container {
+      position: relative;
+
+      .setup-wizard__welcome-video-preview {
         max-width: 836px;
         width: 100%;
         margin: 0 auto;
         border-radius: 10px;
       }
-    }
 
-    .setup-wizard__main-buttons{
-        @extend %button-container;
+      iframe {
+        height: 480px;
+        width: 836px;
+        margin: 0 auto;
+        border-radius: $border-radius;
 
-      .setup-wizard__button-left{
-        @extend %common-button;
-        color: $color-white;
-        background-color: $primary-color;
+        @media (max-width: 1240px) {
+          width: 750px;
+        }
+        @media (max-width: 1024px) {
+          height: 400px;
+          width: 650px;
+        }
       }
-      .setup-wizard__button-right{
-        @extend %common-button;
-        color: $primary-color;
-        border: 1px solid #EBE4FF;
-        background: #F7F4FF;
-      }
+
+  }
+
+  .setup-wizard__video-play-button {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+
+    button{
+      padding: 20px 36px;
+      border-radius: 16px;
+      background-color: #FF2E3B;
+      border: none;
+      cursor: pointer;
     }
   }
 
-  &__features-section-container{
+  .setup-wizard__main-buttons {
+    @extend %button-container;
+
+    .setup-wizard__button-left {
+      @extend %common-button;
+      color: $color-white;
+      background-color: $primary-color;
+    }
+    .setup-wizard__button-right {
+      @extend %common-button;
+      color: $primary-color;
+      border: 1px solid #ebe4ff;
+      background: #f7f4ff;
+    }
+  }
+}
+
+  &__features-section-container {
     @extend %section-container;
 
-    .setup-wizard__features-text-content{
+    .setup-wizard__features-text-content {
       margin-bottom: 20px;
-
     }
 
-    .setup-wizard__feature-lists{
+    .setup-wizard__feature-lists {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 138px;
       grid-row-gap: 20px;
-      .setup-wizard__single-feature{
+      .setup-wizard__single-feature {
         display: flex;
         align-items: start;
         gap: 27px;
-        .setup-wizard__feature-image{}
-        .setup-wizard__feature-text-content{
-          .setup-wizard__feature-heading{
-            color: #0E003C;
+        .setup-wizard__feature-image {
+        }
+        .setup-wizard__feature-text-content {
+          .setup-wizard__feature-heading {
+            color: #0e003c;
             font-family: Urbanist;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
-            line-height: 27px; 
+            line-height: 27px;
           }
-          .setup-wizard__feature-description{
-            color: #73707D;
+          .setup-wizard__feature-description {
+            color: #73707d;
             font-family: Urbanist;
             font-size: 16px;
             font-style: normal;
@@ -212,24 +244,38 @@
       }
     }
 
+    .setup-wizard__feature-list-button-container{
+      margin-top: 46px;
 
+      .setup-wizard__feature-list-button{
+        @extend %common-button;
+        background: #F7F4FF; 
+        border: 1px solid #EBE4FF;
+        font-weight: 700; 
+        font-size: 16px; 
+        line-height: 1.6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+    }
 
-    .setup-wizard__main-buttons{
+    .setup-wizard__main-buttons {
       @extend %button-container;
       margin-top: 20px;
 
-
-    .setup-wizard__button-left{
-      @extend %common-button;
-      color: $color-white;
-      background-color: $primary-color;
+      .setup-wizard__button-left {
+        @extend %common-button;
+        color: $color-white;
+        background-color: $primary-color;
+      }
+      .setup-wizard__button-right {
+        @extend %common-button;
+        color: $primary-color;
+        border: 1px solid #ebe4ff;
+        background: #f7f4ff;
+      }
     }
-    .setup-wizard__button-right{
-      @extend %common-button;
-      color: $primary-color;
-      border: 1px solid #EBE4FF;
-      background: #F7F4FF;
-    }
-  }
   }
 }
