@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setup Wizard</title>
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./scss/custom.css" />
 </head>
@@ -18,7 +18,7 @@
 <body>
     <div class="setup-wizard">
         <div class="setup-wizard__container">
-            <div class="setup-wizard__inner-container">
+            <div class="setup-wizard__content">
                 <!-- Logo container -->
                 <div class="setup-wizard__logo-container">
                     <figure>
@@ -48,6 +48,47 @@
                         <div class="setup-wizard__progress-step setup-wizard__progress-step--not-visited">
                             <p> <span> 3 </span> Done </p>
                         </div>
+                    </div>
+                </div>
+
+                <!-- welcome section container -->
+                <div class="setup-wizard__welcome-section-container">
+                    <div class="setup-wizard__welcome-text-content">
+                        <h1 class="setup-wizard__welcome-heading setup-wizard__heading-one">Hello, welcome to
+                            <span class="setup-wizard__heading-one-highlight">WPVR</span>
+                        </h1>
+                        <p class="setup-wizard__welcome-description setup-wizard__description">WP VR is a
+                            powerful virtual tour
+                            creator for WordPress that lets you create captivating
+                            walkthroughs of any property or location, with detailed and interactive information to
+                            enrich your audience's experience with your business.</p>
+                    </div>
+                    <!-- video container -->
+                    <div class="setup-wizard__welcome-video-container">
+                        <div id="setup_video" class="setup-wizard__welcome-video-iframe" style="display:none">
+                            <iframe id="recommendation-video_set" title="Video"></iframe>
+                        </div>
+
+                        <img id="recommendation-preview" class="setup-wizard__welcome-video-preview" loading="lazy"
+                            src="http://localhost:10024/wp-content/plugins/wpvr/admin/icon/setup-wizard-images/youtube-thumbnill.webp"
+                            alt="preview image">
+
+                        <!-- <div id="video_play_button" class="setup-wizard__done-video-button">
+                            <button class="bg-[#FF2E3B] px-[36px] py-[22px] rounded-2xl setup-wizard__shadow">
+                                <svg width="22" height="27" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.9389 15.27L2.27013 1.66876V28.8713L24.9389 15.27Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div> -->
+                    </div>
+                    <!-- setup wizard buttons -->
+                    <div class="setup-wizard__main-buttons">
+                        <a href="#" class="setup-wizard__button-left">
+                            Let’s create your first tour
+                        </a>
+                        <a href="#" class="setup-wizard__button-right">
+                            Check the guide
+                        </a>
                     </div>
                 </div>
             </div>
