@@ -261,6 +261,21 @@
       }
     }
 
+    .setup-wizard__pro-features{
+      background: linear-gradient(100.82deg, #C0ECFF 0.77%, #E0F6FF 20.23%, #F4F0FF 79.76%, #E7DEFF 100.21%);
+      .setup-wizard__pro-features-text-content {
+        margin-bottom: 20px;
+      }
+  
+      .setup-wizard__pro-feature-heading{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.75;
+        color: $primary-color;
+        font-family: $primary-font;
+      }
+    }
+
     .setup-wizard__main-buttons {
       @extend %button-container;
       margin-top: 20px;
@@ -278,4 +293,6 @@
       }
     }
   }
+
+
 }
